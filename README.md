@@ -5,7 +5,6 @@
 # information about your group:
 
 
-# contributors names and details:
+# contributors names and details: 
+[1] 
 
-
-<img src="/FB_IMG_17050946970487822[1].jpeg">
