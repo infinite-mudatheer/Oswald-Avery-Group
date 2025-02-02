@@ -1,5 +1,6 @@
 # Print details
-cat("Name: Mudassir Hussaini\n")
-cat("Email: Mundansiruhussaini@gmail.com\n")
-cat("Phone number: 09043010480\n")
-cat("Area Of Interest: Genomics\n")
+cat("Name: ADAMU bako yaro\n")
+cat("Email: adamubakoyari@gmail.com\n")
+cat("Phone number: +234 812 514 5697\n")
+cat("Area Of Interest: PROTEOMICS\n")
+
