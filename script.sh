@@ -1,7 +1,7 @@
 #!/bin/bash
 #lets define repo info 
-REPO_URL="<repository_url>"
-REPO_NAME="<repository_name>"
+REPO_URL="https://github.com/infinite-mudatheer/Oswald-Avery-Group.git"
+REPO_NAME="Oswald-Avery-Group"
 
 #secondly , lets clone the repository
 if [ -d "$REPO_NAME" ]; then
