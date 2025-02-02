@@ -1,5 +1,7 @@
 % Print details
-disp('Name: Mudassir Hussaini')
-disp('Email: Mundansiruhussaini@gmail.com')
-disp('Phone number: 09043010480')
-disp('Area Of Interest: Genomics')
+disp('Name: khadija umar')
+disp('Email: khadyummi@gmail.com')
+disp('Phone number: +234 903 328 5253')
+disp('Area Of Interest: METAGENOMICS')
+
+
