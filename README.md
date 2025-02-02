@@ -16,12 +16,14 @@ Matric no: BASUG/UG/BMS/ANA/21/1916
 Interested Area : GENOMICS
 Email: mundansiruhussaini@gmail.com
 Phone : 09043010480
+<img src="images/IMG-20250201-WA0025.jpg">
 
 # Name:IBRAHIM UMAR FARUOQ
 Email:IUMARFAROUQ2020@GMAIL.COM
 AREA OF INTEREST: “Systems Biology”
 Matric no : ANA/21/3307
 Phone no:0 803 439 0275
+<img src="images/IMG-20250201-WA0025.jpg">
 
 # Name: Abdurrahm Muhammad Bello
 Matric no: Ana/22/1895
