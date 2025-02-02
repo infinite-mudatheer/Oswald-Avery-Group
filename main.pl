@@ -1,5 +1,5 @@
 # Print details
-print "Name: Mudassir Hussaini\n";
-print "Email: Mundansiruhussaini@gmail.com\n";
-print "Phone number: 09043010480\n";
-print "Area Of Interest: Genomics\n";
+print "Name: AMEERA AMINU MIRAJ\n";
+print "Email: amiraaminu900@gmail.com\n";
+print "Phone number: 08067537006\n";
+print "Area Of Interest: DATA VISUALISATION\n";
