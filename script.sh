@@ -1,44 +1,54 @@
 #!/bin/bash
+#lets define repo info 
+REPO_URL="<repository_url>"
+REPO_NAME="<repository_name>"
 
-# firstly , Clone the repository
-git clone <repository_url>
-cd <repository_name>
+#secondly , lets clone the repository
+if [ -d "$REPO_NAME" ]; then
+    echo "Repository already cloned. Pulling latest changes..."
+    cd "$REPO_NAME" && git pull
+else
+    echo "Cloning repository..."
+    git clone "$REPO_URL"
+    cd "$REPO_NAME"
+fi
 
-# now, Run the scripts and capture the output
+# Compile C++ and C# scripts
+g++ main.cpp -o main_cpp.out
+mcs -out:main_cs.exe main.cs
+
+# Run the scripts and capture the output
 output_py=$(python3 main.py)
-output_cpp=$(./main.cpp)
-output_cs=$(./main.cs)
-output_pl=$(./main.pl)
-output_m=$(matlab -batch "run('main.m')")
+output_cpp=$(./main_cpp.out)
+output_cs=$(mono main_cs.exe)
+output_pl=$(perl main.pl)
+output_m=$(matlab -batch "main")
 output_r=$(Rscript main.R)
 
-# lets extract email and area of interest from the outputs
-email_py=$(echo "$output_py" | grep -oP 'Email: \K.*')
-area_of_interest_py=$(echo "$output_py" | grep -oP 'Area Of Interest: \K.*')
+# Extract email and area of interest from the outputs
+extract_info() {
+    local output=$1
+    local email=$(echo "$output" | grep -oP 'Email: \K.*')
+    local area_of_interest=$(echo "$output" | grep -oP 'Area Of Interest: \K.*')
+    echo "$email,$area_of_interest"
+}
 
-email_cpp=$(echo "$output_cpp" | grep -oP 'Email: \K.*')
-area_of_interest_cpp=$(echo "$output_cpp" | grep -oP 'Area Of Interest: \K.*')
+info_py=$(extract_info "$output_py")
+info_cpp=$(extract_info "$output_cpp")
+info_cs=$(extract_info "$output_cs")
+info_pl=$(extract_info "$output_pl")
+info_m=$(extract_info "$output_m")
+info_r=$(extract_info "$output_r")
 
-email_cs=$(echo "$output_cs" | grep -oP 'Email: \K.*')
-area_of_interest_cs=$(echo "$output_cs" | grep -oP 'Area Of Interest: \K.*')
-
-email_pl=$(echo "$output_pl" | grep -oP 'Email: \K.*')
-area_of_interest_pl=$(echo "$output_pl" | grep -oP 'Area Of Interest: \K.*')
-
-email_m=$(echo "$output_m" | grep -oP 'Email: \K.*')
-area_of_interest_m=$(echo "$output_m" | grep -oP 'Area Of Interest: \K.*')
-
-email_r=$(echo "$output_r" | grep -oP 'Email: \K.*')
-area_of_interest_r=$(echo "$output_r" | grep -oP 'Area Of Interest: \K.*')
-
-# finally, we generate CSV file
+#finally , we generate CSV file
 echo "Email,Area Of Interest" > output.csv
-echo "$email_py,$area_of_interest_py" >> output.csv
-echo "$email_cpp,$area_of_interest_cpp" >> output.csv
-echo "$email_cs,$area_of_interest_cs" >> output.csv
-echo "$email_pl,$area_of_interest_pl" >> output.csv
-echo "$email_m,$area_of_interest_m" >> output.csv
-echo "$email_r,$area_of_interest_r" >> output.csv
+echo "$info_py" >> output.csv
+echo "$info_cpp" >> output.csv
+echo "$info_cs" >> output.csv
+echo "$info_pl" >> output.csv
+echo "$info_m" >> output.csv
+echo "$info_r" >> output.csv
 
 echo "CSV file generated: output.csv"
 
+#code with shakefire@protonmail.com
