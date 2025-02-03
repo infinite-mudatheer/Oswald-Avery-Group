@@ -49,9 +49,9 @@ Email: khadyummi@gmail.com
 <img src="images/IMG-20250202-WA0000.jpg">
 
 
-# Name : AMEERA AMINU MIRAJ
+# Name : AMIRA AMINU MIRAJ
 Matric no: Ana/21/1818
-Email:amiraaminu900@gmail.com
+Email:amiraaminu006@gmail.com
 Interested Area : DATA VISUALISATION 
 Phone no:08067537006
 
