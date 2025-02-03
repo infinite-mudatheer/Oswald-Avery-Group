@@ -51,7 +51,7 @@ Email: khadyummi@gmail.com
 
 # Name : AMIRA AMINU MIRAJ
 Matric no: Ana/21/1818
-Email:amiraaminu006@gmail.com
+Email:amiramiraj006@gmail.com
 Interested Area : DATA VISUALISATION 
 Phone no:08067537006
 
