@@ -2,11 +2,28 @@
 
 # Introduction On Bioinformatics:
 
-Bioinformatics is an interdisciplinary field that involves the computer science, molecular biology, mathematics and statistics to analyse the biological data.
+Bioinformatics is an interdisciplinary field that involves the computer science, molecular biology, mathematics and statistics to analyse the biological data. Bioinformatics also is a datascience that comprises the computer, mathematics,biology, statistics to interpret and analyzes the biological information (data).
+   However, Dayhoff is known as the founder of bioinformatics. This she
+did by pioneering the application of mathematics and
+computational techniques to the sequencing of proteins and
+nucleic acids and establishing the first publicly available
+database for research in the area.
+   Bioinformatics has the several components which includes the following:
+   (1) computer 
+   (2)internet
+   (3) Operating system: Ubuntu (e.g xbunto, pedora). e.t.c.
+   (4) python programme
+   (5) R-programme.
 
 
 # information about your group:
-Oswald-Avery-Group
+Oswald-Avery has discovered  that proteins
+were not the source of genetic material in the cell, but DNA .
+The discovery was made while working at the Rockefeller
+Institute, where he was appointed specifically to the
+pneumonia research program so that he could focus entirely
+on pneumococcus bacteria.
+This group (i.e OSWALD-AVERY GROUP 3) we collaborately work on this assignment from the initial step to final according to the instructions given, where each member of this group used his own programming language( e.g R,Python,matlab,C#,c++,perl) to worked with.Finally we finished our work collectively and generated our bash script and CVS files at the end as instructed.
 
 
 # contributors Details: 
