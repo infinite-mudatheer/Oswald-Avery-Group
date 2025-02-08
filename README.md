@@ -16,7 +16,7 @@ database for research in the area.
    (5) R-programme.
 
 
-# information about your group:
+# information about the group:(OSWALD AVERY GROUP 3):
 Oswald-Avery has discovered  that proteins
 were not the source of genetic material in the cell, but DNA .
 The discovery was made while working at the Rockefeller
